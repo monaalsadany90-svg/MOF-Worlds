@@ -3,68 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>شخصيات عوالم فرح وعمر</title>
+    <title>أبطال عالم فرح وعمر</title>
+    <style>
+        body { background: #0b0d17; color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center; margin: 0; padding: 20px; }
+        nav { background: #1a1d2e; padding: 15px; margin-bottom: 30px; display: flex; justify-content: center; gap: 20px; border-bottom: 2px solid #d4af37; }
+        nav a { color: #d4af37; text-decoration: none; font-weight: bold; font-size: 1.1rem; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 25px; padding: 20px; }
+        .card { background: #1a1d2e; border: 1px solid #333; border-radius: 15px; padding: 15px; transition: 0.4s; }
+        .card:hover { transform: translateY(-10px); border-color: #d4af37; box-shadow: 0 0 20px rgba(212, 175, 55, 0.4); }
+        .card img { width: 100%; border-radius: 10px; height: 280px; object-fit: cover; border: 1px solid #444; }
+        h2 { color: #d4af37; margin: 15px 0 5px 0; font-size: 1.5rem; }
+        p { font-size: 0.9rem; opacity: 0.8; line-height: 1.4; }
+    </style>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo"><h1>MOF Worlds</h1></div>
-            <ul class="nav-links">
-                <li><a href="index.html">الرئيسية</a></li>
-                <li><a href="characters.html" class="active">الشخصيات</a></li>
-            </ul>
-        </div>
+
+    <nav>
+        <a href="index.html">الرئيسية</a>
+        <a href="characters.html">الشخصيات</a>
+        <a href="amulets.html">التمائم</a>
     </nav>
 
-    <main class="main-content">
-        <h1>الشخصيات</h1>
-        <p class="page-subtitle">تعرف على أبطال وأضداد عوالم فرح وعمر</p>
+    <h1 style="color: #d4af37; margin-bottom: 30px;">أبطال مغامرات فرح وعمر</h1>
 
-        <div class="characters-container">
-            <div class="character-detail hero">
-                <div class="character-info">
-                    <h2>فرح</h2>
-                    <p class="role">البطلة الرئيسية</p>
-                    <p class="description">فتاة شجاعة وذكية، تمتلك قلباً نقياً وعزماً لا يتزعزع. تقود الطريق نحو النور والأمل.</p>
-                    <div class="powers">
-                        <h4>القوى والقدرات:</h4>
-                        <ul><li>جرعة الحروف المضيئة</li><li>درع الضاد</li><li>قوة النور</li></ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="character-detail hero">
-                <div class="character-info">
-                    <h2>عمر</h2>
-                    <p class="role">البطل الرئيسي</p>
-                    <p class="description">شاب حكيم وقوي (أصغر من فرح بسنتين)، يمتلك معرفة عميقة بالسحر.</p>
-                    <div class="powers">
-                        <h4>القوى والقدرات:</h4>
-                        <ul><li>بلورة الحروف السحرية</li><li>قوة الحكمة</li><li>السحر الأرجواني</li></ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="character-detail villain">
-                <div class="character-info">
-                    <h2>ظلامة</h2>
-                    <p class="role">الضد - عدوة فرح</p>
-                    <p class="description">تمثل قوى الظلام والشك. تسعى لنشر الخوف والظلام في كل مكان.</p>
-                    <div class="powers">
-                        <h4>القوى والقدرات:</h4>
-                        <ul><li>قوة الظلام</li><li>السحر الأسود</li><li>الشتات</li></ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="character-detail villain">
-                <div class="character-info">
-                    <h2>باقي الأضداد (دجى، طمس، شتت)</h2>
-                    <p class="description">يمثلون الغموض، التشويه، والفوضى في مواجهة رنيم ولؤلؤة وسطر.</p>
-                </div>
-            </div>
+    <div class="grid">
+        <div class="card">
+            <img src="farah-card.png" alt="فرح">
+            <h2>فرح</h2>
+            <p>البطلة الشجاعة والذكية</p>
         </div>
-    </main>
+
+        <div class="card">
+            <img src="omar-card.png" alt="عمر">
+            <h2>عمر</h2>
+            <p>البطل الحكيم والقوي</p>
+        </div>
+
+        <div class="card">
+            <img src="milana-card.png" alt="ميلانا">
+            <h2>ميلانا</h2>
+            <p>من سكان عوالمنا السحرية</p>
+        </div>
+
+        <div class="card" style="border-color: #d4af37;">
+            <img src="zalamah.png" alt="ظلامة">
+            <h2>ظلامة</h2>
+            <p>حاكم قصر المرايا الخادعة</p>
+        </div>
+
+        <div class="card">
+            <img src="Doja-card.png" alt="دجى">
+            <h2>دجى</h2>
+            <p>صاحبة الغموض والسحر</p>
+        </div>
+
+        <div class="card">
+            <img src="shatat.png" alt="شتت">
+            <h2>شتت</h2>
+            <p>شخصية غامضة في الرحلة</p>
+        </div>
+
+        <div class="card">
+            <img src="tams.png" alt="طمس">
+            <h2>طمس</h2>
+            <p>من سكان عالم الحروف</p>
+        </div>
+
+        <div class="card">
+            <img src="raneem.png" alt="رنيم">
+            <h2>رنيم</h2>
+            <p>صوت العوالم السحرية</p>
+        </div>
+
+        <div class="card">
+            <img src="luluah.png" alt="لؤلؤة">
+            <h2>لؤلؤة</h2>
+            <p>جمال وأناقة العالم السحري</p>
+        </div>
+
+        <div class="card">
+            <img src="satr.png" alt="سطر">
+            <h2>سطر</h2>
+            <p>حارس الكلمات والحكايات</p>
+        </div>
+    </div>
+
 </body>
 </html>
