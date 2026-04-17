@@ -3,22 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>البطل عمر</title>
+    <title>البطل عمر - عالم المغامرات</title>
     <style>
-        body { background: #0b0d17; color: white; font-family: sans-serif; text-align: center; padding: 40px; }
-        .big-card { max-width: 600px; margin: auto; background: #1a1d2e; border: 2px solid #d4af37; border-radius: 20px; padding: 30px; box-shadow: 0 0 30px rgba(212, 175, 55, 0.5); }
-        .big-card img { width: 100%; border-radius: 15px; margin-bottom: 20px; border: 1px solid #d4af37; }
-        h1 { color: #d4af37; font-size: 2.5rem; margin-bottom: 20px; }
-        p { font-size: 1.3rem; line-height: 1.8; color: #eee; }
-        .back-btn { display: inline-block; margin-top: 30px; padding: 12px 25px; background: #d4af37; color: #0b0d17; text-decoration: none; border-radius: 8px; font-weight: bold; }
+        /* تنسيق الصفحة العام */
+        body { 
+            background: #0b0d17; 
+            color: white; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 0; 
+            text-align: center; 
+        }
+
+        /* شريط التنقل (الـ Nav) الموحد */
+        nav { 
+            background: #1a1d2e; 
+            padding: 15px; 
+            display: flex; 
+            justify-content: center; 
+            gap: 20px; 
+            border-bottom: 2px solid #d4af37; 
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a { 
+            color: #d4af37; 
+            text-decoration: none; 
+            font-weight: bold; 
+            font-size: 1.1rem;
+            transition: 0.3s;
+        }
+        nav a:hover { color: white; }
+
+        /* حاوية البطاقة الكبيرة */
+        .container { 
+            padding: 40px 20px; 
+            display: flex; 
+            justify-content: center; 
+        }
+
+        .big-card { 
+            max-width: 550px; 
+            background: #1a1d2e; 
+            border: 2px solid #d4af37; 
+            border-radius: 20px; 
+            padding: 20px; 
+            box-shadow: 0 0 40px rgba(212, 175, 55, 0.4); 
+        }
+
+        /* تنسيق صورة البطاقة الكاملة لعمر */
+        .big-card img { 
+            width: 100%; 
+            height: auto; 
+            border-radius: 15px; 
+            border: 1px solid #444;
+            margin-bottom: 20px;
+        }
+
+        h1 { color: #d4af37; font-size: 2.2rem; margin-bottom: 15px; }
+        p { font-size: 1.2rem; line-height: 1.8; color: #eee; text-align: justify; padding: 0 10px; }
+
+        /* زر العودة للبطاقات */
+        .back-btn { 
+            display: inline-block; 
+            margin-top: 25px; 
+            padding: 12px 30px; 
+            background: #d4af37; 
+            color: #0b0d17; 
+            text-decoration: none; 
+            border-radius: 8px; 
+            font-weight: bold; 
+            transition: 0.3s;
+        }
+        .back-btn:hover { background: white; transform: scale(1.05); }
     </style>
 </head>
 <body>
-    <div class="big-card">
-        <img src="omar-card.png" alt="عمر">
-        <h1>البطل عمر</h1>
-        <p>عمر هو البطل الحكيم والقوي، الأخ الأصغر لفرح. يتميز بهدوئه وقدرته على مساندة أخته في كل المغامرات.</p>
-        <a href="cards.html" class="back-btn">العودة للأبطال</a>
+
+    <nav>
+        <a href="index.html">الرئيسية</a>
+        <a href="characters.html">الشخصيات</a>
+        <a href="cards.html">البطاقات</a> 
+        <a href="amulets.html">التمائم</a>
+    </nav>
+
+    <div class="container">
+        <div class="big-card">
+            <img src="omar-card.png" alt="بطاقة عمر الكاملة">
+            
+            <h1>البطل عمر</h1>
+            
+            <p>
+                عمر هو البطل الذكي والحكيم، الأخ الأصغر لفرح بفرق بسيط في السن والطول. 
+                يتميز عمر بهدوئه وقدرته العالية على التحليل، وهو السند القوي لأخته في كل مغامرة يخوضانها. 
+                صممت بطاقة عمر لتعكس مهاراته الخاصة وأدواته السحرية التي يستخدمها بذكاء لتجاوز الصعاب في عالم الحروف والمرايا.
+            </p>
+            
+            <a href="cards.html" class="back-btn">العودة لصفحة البطاقات</a>
+        </div>
     </div>
+
 </body>
 </html>
