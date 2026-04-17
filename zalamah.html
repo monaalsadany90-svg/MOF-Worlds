@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ظلامة - حاكم قصر المرايا</title>
     <style>
-        /* تنسيق الصفحة العام */
+        /* تنسيق الصفحة العام - الخلفية والألوان */
         body { 
             background: #0b0d17; 
             color: white; 
@@ -14,7 +14,7 @@
             text-align: center; 
         }
 
-        /* شريط التنقل (الـ Nav) */
+        /* شريط التنقل (الـ Nav) الموحد */
         nav { 
             background: #1a1d2e; 
             padding: 15px; 
@@ -35,7 +35,7 @@
         }
         nav a:hover { color: white; }
 
-        /* حاوية البطاقة الكبيرة */
+        /* حاوية البطاقة الكبيرة في منتصف الشاشة */
         .container { 
             padding: 40px 20px; 
             display: flex; 
@@ -49,19 +49,31 @@
             border-radius: 20px; 
             padding: 20px; 
             box-shadow: 0 0 40px rgba(212, 175, 55, 0.4); 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
-        /* تنسيق صورة البطاقة الكاملة */
+        /* تنسيق صورة البطاقة الكاملة -object-fit: contain لظهور التفاصيل- */
         .big-card img { 
             width: 100%; 
             height: auto; 
             border-radius: 15px; 
             border: 1px solid #444;
             margin-bottom: 20px;
+            object-fit: contain;
         }
 
+        /* تنسيق العنوان والنصوص */
         h1 { color: #d4af37; font-size: 2.2rem; margin-bottom: 15px; }
-        p { font-size: 1.2rem; line-height: 1.8; color: #eee; text-align: justify; padding: 0 10px; }
+        p { 
+            font-size: 1.2rem; 
+            line-height: 1.8; 
+            color: #eee; 
+            text-align: justify; 
+            padding: 0 10px; 
+            margin: 0;
+        }
 
         /* زر العودة للبطاقات */
         .back-btn { 
@@ -85,11 +97,13 @@
         <a href="characters.html">الشخصيات</a>
         <a href="cards.html">البطاقات</a> 
         <a href="amulets.html">التمائم</a>
+        <a href="episodes.html">الحلقات</a>
     </nav>
 
     <div class="container">
         <div class="big-card">
-            <img src="zalamah-card.png" alt="بطاقة ظلامة الكاملة">
+            
+            <img src="zalamah.png" alt="بطاقة ظلامة الكاملة">
             
             <h1>ظلامة</h1>
             
