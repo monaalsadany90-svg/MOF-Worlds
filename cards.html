@@ -9,10 +9,11 @@
         nav { background: #1a1d2e; padding: 15px; margin-bottom: 30px; display: flex; justify-content: center; gap: 20px; border-bottom: 2px solid #d4af37; }
         nav a { color: #d4af37; text-decoration: none; font-weight: bold; }
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; padding: 20px; }
-        .card { background: #1a1d2e; border: 1px solid #333; border-radius: 15px; padding: 10px; transition: 0.3s; }
-        .card:hover { transform: scale(1.05); border-color: #d4af37; }
-        .card img { width: 100%; border-radius: 10px; height: 300px; object-fit: cover; }
-        h2 { color: #d4af37; font-size: 1.2rem; margin: 10px 0; }
+        .card { background: #1a1d2e; border: 1px solid #333; border-radius: 15px; padding: 15px; transition: 0.3s; height: 100%; }
+        .card:hover { transform: scale(1.05); border-color: #d4af37; cursor: pointer; }
+        .card img { width: 100%; border-radius: 10px; height: 250px; object-fit: cover; margin-bottom: 10px; }
+        h2 { color: #d4af37; font-size: 1.2rem; margin: 5px 0; }
+        p { font-size: 0.9rem; color: #ccc; }
         a { text-decoration: none; color: inherit; }
     </style>
 </head>
@@ -24,25 +25,19 @@
     </nav>
 
     <div class="grid">
-        <a href="farah.html"><div class="card"><img src="farah-card.png"><h2>فرح</h2></div></a>
+        <a href="farah.html"><div class="card"><img src="farah-card.png" alt="فرح"><h2>فرح</h2><p>البطلة الشجاعة</p></div></a>
         
-        <a href="omar.html"><div class="card"><img src="omar-card.png"><h2>عمر</h2></div></a>
+        <a href="omar.html"><div class="card"><img src="omar-card.png" alt="عمر"><h2>عمر</h2><p>البطل الحكيم</p></div></a>
         
-        <a href="melana.html"><div class="card"><img src="melana.png"><h2>ميلانا</h2></div></a>
+        <a href="zalamah.html"><div class="card"><img src="zalamah.png" alt="ظلامة"><h2>ظلامة</h2><p>حاكم المرايا</p></div></a>
         
-        <a href="lulua.html"><div class="card"><img src="luluah.png"><h2>لؤلؤة</h2></div></a>
+        <a href="melana.html"><div class="card"><img src="melana.png" alt="ميلانا"><h2>ميلانا</h2><p>صديقة الأبطال</p></div></a>
         
-        <a href="zalamah.html"><div class="card"><img src="zalamah.png"><h2>ظلامة</h2></div></a>
+        <a href="luluah.html"><div class="card"><img src="luluah.png" alt="لؤلؤة"><h2>لؤلؤة</h2><p>سر الأعماق</p></div></a>
         
-        <a href="doja.html"><div class="card"><img src="doja-card.png"><h2>دجى</h2></div></a>
-        
-        <a href="shatat.html"><div class="card"><img src="shatat.png"><h2>شتت</h2></div></a>
-        
-        <a href="tams.html"><div class="card"><img src="tams.png"><h2>طمس</h2></div></a>
-        
-        <a href="raneem.html"><div class="card"><img src="raneem.png"><h2>رنيم</h2></div></a>
-        
-        <a href="satr.html"><div class="card"><img src="satr.png"><h2>سطر</h2></div></a>
+        <a href="doja.html"><div class="card"><img src="doja-card.png" alt="دجى"><h2>دجى</h2><p>الغموض الساحر</p></div></a>
+
+        <a href="shatat.html"><div class="card"><img src="shatat.png" alt="شتت"><h2>شتت</h2><p>تحدي التركيز</p></div></a>
     </div>
 
 </body>
