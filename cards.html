@@ -3,17 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>أبطال عالم فرح وعمر</title>
+    <title>بطاقات أبطال عالم فرح وعمر</title>
     <style>
-        body { background: #0b0d17; color: white; font-family: sans-serif; text-align: center; margin: 0; padding: 20px; }
-        nav { background: #1a1d2e; padding: 15px; margin-bottom: 30px; display: flex; justify-content: center; gap: 20px; border-bottom: 2px solid #d4af37; }
-        nav a { color: #d4af37; text-decoration: none; font-weight: bold; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; padding: 20px; }
-        .card { background: #1a1d2e; border: 1px solid #333; border-radius: 15px; padding: 15px; transition: 0.3s; height: 100%; }
-        .card:hover { transform: scale(1.05); border-color: #d4af37; cursor: pointer; }
-        .card img { width: 100%; border-radius: 10px; height: 250px; object-fit: cover; margin-bottom: 10px; }
-        h2 { color: #d4af37; font-size: 1.2rem; margin: 5px 0; }
-        p { font-size: 0.9rem; color: #ccc; }
+        body { 
+            background: #0b0d17; 
+            color: white; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            text-align: center; 
+            margin: 0; 
+            padding: 20px; 
+        }
+
+        /* شريط التنقل العلوي */
+        nav { 
+            background: #1a1d2e; 
+            padding: 15px; 
+            margin-bottom: 30px; 
+            display: flex; 
+            justify-content: center; 
+            gap: 20px; 
+            border-bottom: 2px solid #d4af37; 
+        }
+        nav a { color: #d4af37; text-decoration: none; font-weight: bold; font-size: 1.1rem; }
+        nav a:hover { color: white; }
+
+        h1 { color: #d4af37; margin-bottom: 30px; font-size: 2rem; }
+
+        /* شبكة البطاقات */
+        .grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+            gap: 30px; 
+            padding: 20px; 
+            max-width: 1200px; 
+            margin: auto;
+        }
+
+        /* تصميم الكارت نفسه */
+        .card { 
+            background: rgba(26, 29, 46, 0.8); 
+            border-radius: 15px; 
+            padding: 10px; 
+            transition: 0.4s; 
+            border: 1px solid transparent;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .card:hover { 
+            transform: translateY(-10px); 
+            border-color: #d4af37; 
+            box-shadow: 0 10px 20px rgba(212, 175, 55, 0.3);
+            cursor: pointer; 
+        }
+
+        /* تنسيق صورة البطاقة الطويلة */
+        .card img { 
+            width: 100%; 
+            height: auto; 
+            max-height: 500px; /* طول البطاقة ليكون متناسق */
+            border-radius: 10px; 
+            object-fit: contain; /* عشان البطاقة تظهر كاملة بكل تفاصيلها */
+        }
+
+        h2 { color: #d4af37; font-size: 1.5rem; margin: 15px 0 5px 0; }
+        p { font-size: 1rem; color: #ccc; margin-bottom: 15px; }
+
         a { text-decoration: none; color: inherit; }
     </style>
 </head>
@@ -21,23 +77,60 @@
 
     <nav>
         <a href="index.html">الرئيسية</a>
-        <a href="cards.html">الأبطال</a>
+        <a href="characters.html">الشخصيات</a>
+        <a href="cards.html">البطاقات</a>
     </nav>
 
-    <div class="grid">
-        <a href="farah.html"><div class="card"><img src="farah-card.png" alt="فرح"><h2>فرح</h2><p>البطلة الشجاعة</p></div></a>
-        
-        <a href="omar.html"><div class="card"><img src="omar-card.png" alt="عمر"><h2>عمر</h2><p>البطل الحكيم</p></div></a>
-        
-        <a href="zalamah.html"><div class="card"><img src="zalamah-card.png" alt="ظلامة"><h2>ظلامة</h2><p>حاكم المرايا</p></div></a>
-        
-        <a href="melana.html"><div class="card"><img src="melana-card.png" alt="ميلانا"><h2>ميلانا</h2><p>صديقة الأبطال</p></div></a>
-        
-        <a href="luluah.html"><div class="card"><img src="luluah-card.png" alt="لؤلؤة"><h2>لؤلؤة</h2><p>سر الأعماق</p></div></a>
-        
-        <a href="doja.html"><div class="card"><img src="Doja-card.png" alt="دجى"><h2>دجى</h2><p>الغموض الساحر</p></div></a>
+    <h1>أبطال مغامرات فرح وعمر</h1>
 
-        <a href="shatat.html"><div class="card"><img src="shatat-card.png" alt="شتت"><h2>شتت</h2><p>تحدي التركيز</p></div></a>
+    <div class="grid">
+        <a href="farah.html">
+            <div class="card">
+                <img src="farah-card.png" alt="بطاقة فرح">
+                <h2>فرح</h2>
+                <p>البطلة الشجاعة والذكية</p>
+            </div>
+        </a>
+        
+        <a href="omar.html">
+            <div class="card">
+                <img src="omar-card.png" alt="بطاقة عمر">
+                <h2>عمر</h2>
+                <p>البطل الحكيم والقوي</p>
+            </div>
+        </a>
+        
+        <a href="melana.html">
+            <div class="card">
+                <img src="melana-card.png" alt="بطاقة ميلانا">
+                <h2>ميلانا</h2>
+                <p>من سكان عوالمنا السحرية</p>
+            </div>
+        </a>
+        
+        <a href="luluah.html">
+            <div class="card">
+                <img src="lulua-card.png" alt="بطاقة لؤلؤة">
+                <h2>لؤلؤة</h2>
+                <p>سر الأعماق والجمال</p>
+            </div>
+        </a>
+        
+        <a href="zalamah.html">
+            <div class="card">
+                <img src="zalamah-card.png" alt="بطاقة ظلامة">
+                <h2>ظلامة</h2>
+                <p>حاكم قصر المرايا</p>
+            </div>
+        </a>
+
+        <a href="doja.html">
+            <div class="card">
+                <img src="doja-card.png" alt="بطاقة دجى">
+                <h2>دجى</h2>
+                <p>الغموض والسحر</p>
+            </div>
+        </a>
     </div>
 
 </body>
